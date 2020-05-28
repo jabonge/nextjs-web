@@ -13,6 +13,8 @@ const Home4Container = styled.div`
   justify-content: center;
   margin-top: 100px;
   margin-bottom: 100px;
+  margin-right: 30px;
+  margin-left: 30px;
   ${props => props.theme.media.desktop`
       max-width: 1200px;
   
@@ -43,7 +45,7 @@ const Item = styled.div<IProps>`
     `}
 
   & > :first-child {
-    width: 50%;
+    width: 40%;
     margin-right: 20px;
     & > h1 {
       font-size: 32px;
@@ -63,8 +65,12 @@ const Item = styled.div<IProps>`
     background: ${props => props.color} url(${props => props.url}) no-repeat 50%
       50%;
     background-size: 100% 100%;
-    width: 160px;
+    width: 130px;
+    height: 130px;
+    ${props => props.theme.media.desktop`
+      width: 160px;
     height: 160px;
+    `}
   }
 `;
 

@@ -35,7 +35,7 @@ display: block;
   `}
   background: url('https://image.thecupping.co.kr/partners/web/img-bg@2x.png') no-repeat;
   width: 100%;
-  height: 745px;
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,20 +65,31 @@ const TextContainer = styled.div`
       
 top:0;
 left: -30px;
+padding-left:0px;
   `}
   top: -120px;
+  width: 100%;
+  padding-left: 20px;
 
   & > h4 {
-    font-size: 26px;
+    ${props => props.theme.media.desktop`
+      
+      font-size: 26px;
+        `}
+    font-size: 25px;
     font-weight: 700;
     letter-spacing: 18px;
     line-height: 1;
   }
 
   & > p {
+    ${props => props.theme.media.desktop`
+      
+      font-size: 77px;
+        `}
     margin-top: 50px;
     font-weight: 300;
-    font-size: 77px;
+    font-size: 30px;
     line-height: 1.2;
     & > strong {
       font-weight: bold;
@@ -86,14 +97,19 @@ left: -30px;
   }
 
   & > a {
-    width: 520px;
+    ${props => props.theme.media.desktop`
+      width: 520px;
     height: 95px;
+    font-size: 28px;
+    `}
+    width:90%;
+    height: 50px;
     margin-top: 70px;
     border-radius: 5px;
     border: 1px solid #000;
     font-weight: 700;
-    font-size: 28px;
-    line-height: 95px;
+    font-size: 20px;
+    line-height: 50px;
     display: block;
     color: #000;
     text-align: center;
