@@ -59,7 +59,6 @@ const NoticeItemContainer = styled.div`
     margin-bottom: 24px;
     border-radius: 50%;
     background-color: #ff4336;
-    content: '';
   }
 
   & > h2 {

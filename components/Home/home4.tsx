@@ -13,8 +13,7 @@ const Home4Container = styled.div`
   justify-content: center;
   margin-top: 100px;
   margin-bottom: 100px;
-  margin-right: 30px;
-  margin-left: 30px;
+
   ${props => props.theme.media.desktop`
       max-width: 1200px;
   
@@ -61,7 +60,7 @@ const Item = styled.div<IProps>`
     }
   }
 
-  & > :nth-child(2) {
+  & > :last-child {
     background: ${props => props.color} url(${props => props.url}) no-repeat 50%
       50%;
     background-size: 100% 100%;
