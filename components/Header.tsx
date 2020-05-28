@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styled from '../styles/theme-compoenents';
+import Link from 'next/link';
 
 interface IHover {
   isHover: boolean;
@@ -111,7 +112,12 @@ function Header() {
         <SubNavContainer>
           <h5>서비스 소개</h5>
           <h5>제휴 문의</h5>
-          <h5>로그인</h5>
+          <Link href="/about">
+            <a>
+              <h5>로그인</h5>
+            </a>
+          </Link>
+
           <h5>회원가입</h5>
         </SubNavContainer>
         <div>
