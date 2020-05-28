@@ -29,7 +29,8 @@ const MainBG = styled.div`
 background: url('https://image.thecupping.co.kr/partners/web/img-bg@2x.png');
 background-size: 540px 745px;
 width: 540px;
-display: block;
+height: 745px;
+
 
       
   `}
@@ -66,6 +67,7 @@ const TextContainer = styled.div`
 top:0;
 left: -30px;
 padding-left:0px;
+width:auto;
   `}
   top: -120px;
   width: 100%;
@@ -101,6 +103,7 @@ padding-left:0px;
       width: 520px;
     height: 95px;
     font-size: 28px;
+    line-height: 95px;
     `}
     width:90%;
     height: 50px;
